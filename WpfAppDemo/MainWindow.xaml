@@ -13,6 +13,8 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
+
 
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -22,16 +24,22 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" x:Name="TextEtt" FontSize="22" VerticalAlignment="Top" HorizontalAlignment="Left">:3</TextBlock>
-        <Button Grid.Row="2" Grid.Column="3" x:Name="Knapp" Click="Knapp_Click">Tryck på mig~ UwU</Button>
-        <StackPanel Grid.Row="1" Grid.Column="3" >
-            <Button x:Name="KnappStor" Click="KnappStor_Click" >Större!</Button>
-            <Button x:Name="KnappLiten" Click="KnappLiten_Click">Mindre!</Button>
-        </StackPanel>
+        <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" x:Name="TextEtt" FontSize="22" VerticalAlignment="Top" HorizontalAlignment="Left"></TextBlock>
 
-        <Button Grid.Row ="3" Grid.Column="1"  x:Name="KnappKul" Click="KnappKul_Click">Rolig font</Button>
-        <Button Grid.Row="3" Grid.Column="2" x:Name="KnappTraakig"  Click="KnappTraakig_Click">Rätt font</Button>
+        <Button Grid.Row="5" Grid.Column="2" x:Name="Knapp0" Click="Knapp_Click">0</Button>
+        <Button Grid.Row="4" Grid.Column="1" x:Name="Knapp1" Click="Knapp_Click">1</Button>
+        <Button Grid.Row="4" Grid.Column="2" x:Name="Knapp2" Click="Knapp_Click">2</Button>
+        <Button Grid.Row="4" Grid.Column="3" x:Name="Knapp3" Click="Knapp_Click">3</Button>
+        <Button Grid.Row="3" Grid.Column="1" x:Name="Knapp4" Click="Knapp_Click">4</Button>
+        <Button Grid.Row="3" Grid.Column="2" x:Name="Knapp5" Click="Knapp_Click">5</Button>
+        <Button Grid.Row="3" Grid.Column="3" x:Name="Knapp6" Click="Knapp_Click">6</Button>
+        <Button Grid.Row="2" Grid.Column="1" x:Name="Knapp7" Click="Knapp_Click">7</Button>
+        <Button Grid.Row="2" Grid.Column="2" x:Name="Knapp8" Click="Knapp_Click">8</Button>
+        <Button Grid.Row="2" Grid.Column="3" x:Name="Knapp9" Click="Knapp_Click">9</Button>
 
-        <TextBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" x:Name="Input" ></TextBox>
+
+
+
+
     </Grid>
 </Window>
