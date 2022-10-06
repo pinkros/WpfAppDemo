@@ -28,12 +28,40 @@ namespace WpfAppDemo
 
             
         }
-
+        
         private void Knapp_Click(object sender, RoutedEventArgs e)
         {
+            var add = 0;
+            var sub = 0;
             if (e.Source is Button btn)
             {
-                TextEtt.Text += btn.Content;
+                if (btn.Name == "Clear")
+                {
+                    TextEtt.Text = "";
+                }
+
+                else if (btn.Name == "Add")
+                {
+                    add += int.Parse(TextEtt.Text);
+                    TextEtt.Text = "";
+                }
+
+                else if (btn.Name == "Sub")
+                {
+                    sub -= int.Parse(TextEtt.Text);
+                    TextEtt.Text = "";
+                }
+
+                else if (btn.Name == "Equals")
+                {
+                    TextEtt.Text = $"{add}";
+                }
+
+                else
+                {
+                    TextEtt.Text += btn.Content;
+                }
+
             }
 
         }
